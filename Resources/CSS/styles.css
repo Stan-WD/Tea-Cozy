@@ -59,12 +59,15 @@ html {
 }
 
 .ourmissioncontainer {
+    width: 1349px;
+    height: 700px;
+    background-image: url(../../Resources/img-mission-background.jpg);
+    background-size: 1200px 700px;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
-    background-image: url(../img-mission-background.jpg);
 }
 
 .ourmissionh2container, .ourmissionh4container {
@@ -116,11 +119,68 @@ html {
 .locationscontainer {
     background-image: url(../../Resources/img-locations-background.jpg);
     background-size: 1200px 500px;
-    min-width: 1200px;
-    min-height: 500px;
+    width: 1349px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+}
+
+.locationsheadingcontainer {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.locationsdetailscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.downtowncontainer, .eastbaysidecontainer, .oakdalecontainer {
+    background-color: black;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.downtowncontainer {
+    margin-right: 20px;
+}
+
+.eastbaysidecontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.oakdalecontainer {
+    margin-left: 20px;
+}
+
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 1349px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.emailaddress {
+    margin-top: 30px;
+}
+
+.phonenumber {
+    margin-top: 20px;
+}
+
+.copyrightcontainer {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 25px;
 }
