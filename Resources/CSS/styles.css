@@ -13,7 +13,12 @@ html {
     text-align: center;
 }
 
-#headercontainer {
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headercontainer {
     height: 69px;
     border-bottom: 1px solid seashell;
     display: flex;
@@ -21,13 +26,19 @@ html {
     align-items: center;
 }
 
+.logocontainer
+{
+    display: flex;
+}
+
 #logo {
     height: 50px;
     margin-left: 10px;
 }
 
-#navlinkscontainer
+.navlinkscontainer
 {
+    display: flex;
     margin-right: 10px;
 }
 
@@ -47,34 +58,32 @@ html {
     color: blue;
 }
 
-#ourmissioncontainer {
+.ourmissioncontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 1200px;
-    min-height: 700px;
-    background-image: url(../../Resources/img-mission-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1200px 700px;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../img-mission-background.jpg);
 }
 
-.ourmission, .ourmissiondescription {
+.ourmissionh2container, .ourmissionh4container {
     background-color: black;
 }
 
-.ourmission {
+.ourmissionh2container {
     padding-bottom: 10px;
     padding-top: 5px;
 }
 
-.ourmissiondescription {
+.ourmissionh4container {
     padding-bottom: 5px;
 }
 
-#teaofmonthcontainer {
+.teaofmonthcontainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .teaofmonthimages {
@@ -84,20 +93,19 @@ html {
     margin-bottom: 10px;
 }
 
-.teaofthemonth {
+.teaofthemonthh2container {
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-.teaofthemonthdescription {
+.teaofthemonthdescriptionh4container {
     margin-bottom: 20px;
 }
 
-#teaofmonthimagescontainer {
-    display: inline-flex;
-    flex-direction: row;
-    width: 1000px;
+.teaofmonthoverallimagescontainer {
+    display: flex;
     flex-wrap: wrap;
+    width: 1000px;
     justify-content: center;
 }
 
@@ -105,7 +113,7 @@ html {
     margin-bottom: 10px;
 }
 
-#locationscontainer {
+.locationscontainer {
     background-image: url(../../Resources/img-locations-background.jpg);
     background-size: 1200px 500px;
     min-width: 1200px;
@@ -115,72 +123,4 @@ html {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-}
-
-h3 {
-    background-color: black;
-    width: 300px;
-    height: 250px;
-}
-
-#locationsdetailscontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.downtown {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-right: 40px;
-}
-
-.eastbayside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-right: 40px;
-}
-
-.oakdale {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#locationsheadingcontainer {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-}
-
-.boldtext {
-    font-weight: 900;
-}
-
-#contactcontainer {
-    display: flex;
-    flex-direction: column;
-    min-width: 1200px;
-    min-height: 200px;
-}
-
-#contactheading {
-    margin-top: 10px;
-}
-
-#emailaddress {
-    margin-top: 30px;
-}
-
-#phonenumber {
-    margin-top: 20px;
-}
-
-#copyrightinfo {
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 25px;
 }
